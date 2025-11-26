@@ -1,929 +1,29 @@
 
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.308Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.303Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.334Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.362Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.411Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.535Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.573Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.577Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.582Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.687Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.846Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.852Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.865Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:24.915Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.036Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.087Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 122.116.105.15:995 ---
+--- 代理: 61.220.128.226:43 ---
 检查结果:
 STDOUT: {
   "success": true,
-  "proxyIP": "122.116.105.15",
-  "portRemote": 995,
-  "colo": "SIN",
-  "responseTime": 152,
+  "proxyIP": "61.220.128.226",
+  "portRemote": 43,
+  "colo": "SEA",
+  "responseTime": 310,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:25.229Z"
+  "timestamp": "2025-11-26T12:23:22.764Z"
 }
 STDERR: 
 Return Code: 0
 
 
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.314Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.393Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.575Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.32.9.249:51443 ---
+--- 代理: 220.128.110.108:43 ---
 检查结果:
 STDOUT: {
   "success": true,
-  "proxyIP": "114.32.9.249",
-  "portRemote": 51443,
-  "colo": "SIN",
-  "responseTime": 158,
+  "proxyIP": "220.128.110.108",
+  "portRemote": 43,
+  "colo": "SEA",
+  "responseTime": 320,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:25.567Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.560Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.657Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.866Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.962Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.976Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:25.976Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.039Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.135Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.147Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.168Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.300Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.500Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.511Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.578Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.585Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.671Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.674Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:26.723Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 125.227.162.252:12485 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "125.227.162.252",
-  "portRemote": 12485,
-  "colo": "SIN",
-  "responseTime": 130,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:26.787Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 125.227.162.252:12486 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "125.227.162.252",
-  "portRemote": 12486,
-  "colo": "SIN",
-  "responseTime": 130,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:26.954Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.020Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.024Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.031Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.098Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.166Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.178Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.264Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.274Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.499Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.528Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.548Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.543Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.617Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.683Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.770Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:27.756Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.34.202.224:10004 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.34.202.224",
-  "portRemote": 10004,
-  "colo": "SIN",
-  "responseTime": 116,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:27.908Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:28.091Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:28.097Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: -1:-1 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "SIN",
-  "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:28.104Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.34.106.124:10443 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.34.106.124",
-  "portRemote": 10443,
-  "colo": "SIN",
-  "responseTime": 128,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:28.384Z"
+  "timestamp": "2025-11-26T12:23:22.772Z"
 }
 STDERR: 
 Return Code: 0
@@ -935,10 +35,100 @@ STDOUT: {
   "success": true,
   "proxyIP": "114.33.57.170",
   "portRemote": 443,
-  "colo": "SIN",
-  "responseTime": 155,
+  "colo": "SEA",
+  "responseTime": 331,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-16T18:10:28.453Z"
+  "timestamp": "2025-11-26T12:23:22.801Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 122.116.105.15:995 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "122.116.105.15",
+  "portRemote": 995,
+  "colo": "SEA",
+  "responseTime": 309,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:22.806Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 114.34.106.124:10443 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "114.34.106.124",
+  "portRemote": 10443,
+  "colo": "LAX",
+  "responseTime": 285,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:22.953Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 114.32.9.249:51443 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "114.32.9.249",
+  "portRemote": 51443,
+  "colo": "SEA",
+  "responseTime": 347,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:22.993Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 114.34.202.224:10004 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "114.34.202.224",
+  "portRemote": 10004,
+  "colo": "SEA",
+  "responseTime": 317,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:23.655Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 125.228.236.138:443 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "125.228.236.138",
+  "portRemote": 443,
+  "colo": "LAX",
+  "responseTime": 286,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:23.779Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 220.135.92.105:2087 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "220.135.92.105",
+  "portRemote": 2087,
+  "colo": "SEA",
+  "responseTime": 505,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-26T12:23:24.364Z"
 }
 STDERR: 
 Return Code: 0
@@ -950,10 +140,10 @@ STDOUT: {
   "success": false,
   "proxyIP": -1,
   "portRemote": -1,
-  "colo": "SIN",
+  "colo": "SEA",
   "responseTime": -1,
-  "message": "Stream was cancelled.",
-  "timestamp": "2025-11-16T18:10:31.872Z"
+  "message": "Cannot call releaseLock() on a reader with outstanding read promises.",
+  "timestamp": "2025-11-26T12:23:27.038Z"
 }
 STDERR: 
 Return Code: 0
