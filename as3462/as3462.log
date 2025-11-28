@@ -1,14 +1,14 @@
 
---- 代理: 61.220.128.226:43 ---
+--- 代理: 220.135.92.105:2087 ---
 检查结果:
 STDOUT: {
-  "success": true,
-  "proxyIP": "61.220.128.226",
-  "portRemote": 43,
-  "colo": "SEA",
-  "responseTime": 310,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.764Z"
+  "success": false,
+  "proxyIP": "220.135.92.105",
+  "portRemote": 2087,
+  "colo": "LAX",
+  "responseTime": -1,
+  "message": "无法通过ProxyIP访问Cloudflare",
+  "timestamp": "2025-11-28T21:15:48.940Z"
 }
 STDERR: 
 Return Code: 0
@@ -20,25 +20,10 @@ STDOUT: {
   "success": true,
   "proxyIP": "220.128.110.108",
   "portRemote": 43,
-  "colo": "SEA",
-  "responseTime": 320,
+  "colo": "LAX",
+  "responseTime": 284,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.772Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.33.57.170:443 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.33.57.170",
-  "portRemote": 443,
-  "colo": "SEA",
-  "responseTime": 331,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.801Z"
+  "timestamp": "2025-11-28T21:15:49.242Z"
 }
 STDERR: 
 Return Code: 0
@@ -50,10 +35,10 @@ STDOUT: {
   "success": true,
   "proxyIP": "122.116.105.15",
   "portRemote": 995,
-  "colo": "SEA",
-  "responseTime": 309,
+  "colo": "LAX",
+  "responseTime": 271,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.806Z"
+  "timestamp": "2025-11-28T21:15:49.232Z"
 }
 STDERR: 
 Return Code: 0
@@ -66,24 +51,9 @@ STDOUT: {
   "proxyIP": "114.34.106.124",
   "portRemote": 10443,
   "colo": "LAX",
-  "responseTime": 285,
+  "responseTime": 293,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.953Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.32.9.249:51443 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.32.9.249",
-  "portRemote": 51443,
-  "colo": "SEA",
-  "responseTime": 347,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:22.993Z"
+  "timestamp": "2025-11-28T21:15:49.251Z"
 }
 STDERR: 
 Return Code: 0
@@ -95,10 +65,25 @@ STDOUT: {
   "success": true,
   "proxyIP": "114.34.202.224",
   "portRemote": 10004,
-  "colo": "SEA",
-  "responseTime": 317,
+  "colo": "LAX",
+  "responseTime": 274,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:23.655Z"
+  "timestamp": "2025-11-28T21:15:49.237Z"
+}
+STDERR: 
+Return Code: 0
+
+
+--- 代理: 114.33.57.170:443 ---
+检查结果:
+STDOUT: {
+  "success": true,
+  "proxyIP": "114.33.57.170",
+  "portRemote": 443,
+  "colo": "LAX",
+  "responseTime": 295,
+  "message": "第1次验证有效ProxyIP",
+  "timestamp": "2025-11-28T21:15:49.280Z"
 }
 STDERR: 
 Return Code: 0
@@ -111,24 +96,24 @@ STDOUT: {
   "proxyIP": "125.228.236.138",
   "portRemote": 443,
   "colo": "LAX",
-  "responseTime": 286,
+  "responseTime": 281,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:23.779Z"
+  "timestamp": "2025-11-28T21:15:49.295Z"
 }
 STDERR: 
 Return Code: 0
 
 
---- 代理: 220.135.92.105:2087 ---
+--- 代理: 114.32.9.249:51443 ---
 检查结果:
 STDOUT: {
   "success": true,
-  "proxyIP": "220.135.92.105",
-  "portRemote": 2087,
-  "colo": "SEA",
-  "responseTime": 505,
+  "proxyIP": "114.32.9.249",
+  "portRemote": 51443,
+  "colo": "LAX",
+  "responseTime": 771,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-26T12:23:24.364Z"
+  "timestamp": "2025-11-28T21:15:50.118Z"
 }
 STDERR: 
 Return Code: 0
@@ -140,10 +125,10 @@ STDOUT: {
   "success": false,
   "proxyIP": -1,
   "portRemote": -1,
-  "colo": "SEA",
+  "colo": "LAX",
   "responseTime": -1,
   "message": "Cannot call releaseLock() on a reader with outstanding read promises.",
-  "timestamp": "2025-11-26T12:23:27.038Z"
+  "timestamp": "2025-11-28T21:15:53.578Z"
 }
 STDERR: 
 Return Code: 0
