@@ -1,10 +1,5 @@
 IP地址,端口,TLS,数据中心,源IP位置,地区,城市,地区(中文),国家,城市(中文),国旗,网络延迟,下载速度
-114.34.106.124,10443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,76 ms,3742 kB/s
-220.128.110.108,43,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,46 ms,2999 kB/s
-122.116.105.15,995,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,42 ms,2751 kB/s
-125.228.236.138,443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,40 ms,317 kB/s
-220.135.92.105,2087,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,44 ms,260 kB/s
-114.34.202.224,10004,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,35 ms,229 kB/s
-114.33.57.170,443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,40 ms,158 kB/s
-114.32.9.249,51443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,156 ms,66 kB/s
-114.32.9.249,16443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,150 ms,22 kB/s
+125.228.236.138,443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,54 ms,0 kB/s
+114.34.202.224,10004,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,33 ms,0 kB/s
+114.33.57.170,443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,48 ms,0 kB/s
+114.32.9.249,16443,true,TPE,TW,Asia Pacific,Taipei,亚洲,台湾,台北,🇹🇼,39 ms,0 kB/s

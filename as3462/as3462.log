@@ -1,79 +1,4 @@
 
---- 代理: 220.135.92.105:2087 ---
-检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": "220.135.92.105",
-  "portRemote": 2087,
-  "colo": "LAX",
-  "responseTime": -1,
-  "message": "无法通过ProxyIP访问Cloudflare",
-  "timestamp": "2025-11-28T21:15:48.940Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 220.128.110.108:43 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "220.128.110.108",
-  "portRemote": 43,
-  "colo": "LAX",
-  "responseTime": 284,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.242Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 122.116.105.15:995 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "122.116.105.15",
-  "portRemote": 995,
-  "colo": "LAX",
-  "responseTime": 271,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.232Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.34.106.124:10443 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.34.106.124",
-  "portRemote": 10443,
-  "colo": "LAX",
-  "responseTime": 293,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.251Z"
-}
-STDERR: 
-Return Code: 0
-
-
---- 代理: 114.34.202.224:10004 ---
-检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.34.202.224",
-  "portRemote": 10004,
-  "colo": "LAX",
-  "responseTime": 274,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.237Z"
-}
-STDERR: 
-Return Code: 0
-
-
 --- 代理: 114.33.57.170:443 ---
 检查结果:
 STDOUT: {
@@ -81,9 +6,9 @@ STDOUT: {
   "proxyIP": "114.33.57.170",
   "portRemote": 443,
   "colo": "LAX",
-  "responseTime": 295,
+  "responseTime": 294,
   "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.280Z"
+  "timestamp": "2025-11-30T17:51:41.910Z"
 }
 STDERR: 
 Return Code: 0
@@ -91,45 +16,21 @@ Return Code: 0
 
 --- 代理: 125.228.236.138:443 ---
 检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "125.228.236.138",
-  "portRemote": 443,
-  "colo": "LAX",
-  "responseTime": 281,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:49.295Z"
-}
-STDERR: 
-Return Code: 0
+STDOUT: 
+STDERR: 请求超时
+Return Code: 1
 
 
---- 代理: 114.32.9.249:51443 ---
+--- 代理: 114.34.202.224:10004 ---
 检查结果:
-STDOUT: {
-  "success": true,
-  "proxyIP": "114.32.9.249",
-  "portRemote": 51443,
-  "colo": "LAX",
-  "responseTime": 771,
-  "message": "第1次验证有效ProxyIP",
-  "timestamp": "2025-11-28T21:15:50.118Z"
-}
-STDERR: 
-Return Code: 0
+STDOUT: 
+STDERR: 请求超时
+Return Code: 1
 
 
---- 代理: -1:-1 ---
+--- 代理: 114.32.9.249:16443 ---
 检查结果:
-STDOUT: {
-  "success": false,
-  "proxyIP": -1,
-  "portRemote": -1,
-  "colo": "LAX",
-  "responseTime": -1,
-  "message": "Cannot call releaseLock() on a reader with outstanding read promises.",
-  "timestamp": "2025-11-28T21:15:53.578Z"
-}
-STDERR: 
-Return Code: 0
+STDOUT: 
+STDERR: 请求超时
+Return Code: 1
 
