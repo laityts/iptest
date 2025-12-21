@@ -1,0 +1,71 @@
+name: Proxy Check
+
+on:
+  # 定时触发：每 30 分钟执行一次
+  # schedule:
+  #   - cron: '*/30 * * * *'
+  
+  # 手动触发选项
+  workflow_dispatch:
+    description: '手动执行代理检测'
+
+  # 当代码推送到 main 分支时也执行（可选）
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - 'check_domain.py'
+  #     - '.github/workflows/proxy-check.yml'
+
+env:
+  # Python 版本
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  check-proxies:
+    name: 检测代理可用性
+    runs-on: ubuntu-latest
+    
+    # 设置超时时间，避免长时间运行（直接使用数字，不支持表达式）
+    timeout-minutes: 10
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        
+      - name: 设置 Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+          
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: 显示 Python 版本和依赖
+        run: |
+          python --version
+          pip list | grep requests
+          
+      - name: 执行代理检测脚本
+        run: |
+          echo "🎯 开始执行代理检测脚本..."
+          echo "========================================"
+          python check_domain.py
+          echo "========================================"
+          echo "✅ 脚本执行完成"
+          
+      - name: 保存执行时间
+        if: always()
+        run: |
+          echo "检测完成时间: $(date '+%Y-%m-%d %H:%M:%S')" >> execution_log.txt
+          
+      - name: 上传执行日志
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxy-check-logs
+          path: |
+            execution_log.txt
+          retention-days: 7

@@ -3,10 +3,10 @@
 server=="cloudflare" && asn!="13335" && asn!="209242" && is_domain=false && "CF-RAY:" && "-SIN" && region="Singapore" && (cert="" || cert="cloudflare") && after="2025-06-30" && port!="80" && port!="443"
 
 查询as3462(傻龙)台湾反代ip
-server=="cloudflare" && asn=="3462" && is_domain=false && "CF-RAY:" && "-TPE" && port!="80" && port!="443"
+server=="cloudflare" && asn=="3462" && is_domain=false && port="443" && after="2025-09-30"
 
 查询as4766/3786/9318/17858韩国的反代ip
-server=="cloudflare" && asn=="4766" && is_domain=false && port=="50001"
+server=="cloudflare" && asn=="4766" && is_domain=false && port=="50001" && after="2025-09-30"
 
 查询as4760香港的反代ip
 server=="cloudflare" && asn=="4760" && is_domain=false && "CF-RAY:" && "-HKG" && port!="80" && port!="443"
