@@ -29,6 +29,7 @@ file_lock = threading.Lock()
 # 代理列表 - 可以在此添加更多代理
 PROXY_LIST = [
     "tw.vlato.site:443",
+    "se.vlato.site:443",
     "kr.vlato.site:50001"
 ]
 
