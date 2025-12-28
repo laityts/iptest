@@ -29,6 +29,15 @@ def normalize_base_name(input_arg):
         # 对于非数字的其他格式，也添加as前缀
         return f"as{name_without_ext}"
 
+def find_column_index(headers, possible_names):
+    """在表头中查找可能的列名，返回第一个匹配的索引"""
+    for i, header in enumerate(headers):
+        header_lower = header.strip().lower()
+        for possible_name in possible_names:
+            if possible_name.lower() == header_lower:
+                return i
+    return -1
+
 # 解析命令行参数
 args = parse_arguments()
 input_arg = args.filename.strip()
@@ -112,53 +121,91 @@ try:
     if file_extension == '.csv':
         # 处理CSV文件
         with open(input_filename, 'r', newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
-            headers = next(reader, None)  # 读取表头行
+            # 尝试不同的编码方式
+            try:
+                reader = csv.reader(csvfile)
+                headers = next(reader, None)  # 读取表头行
+            except UnicodeDecodeError:
+                # 如果UTF-8失败，尝试其他编码
+                csvfile.seek(0)
+                reader = csv.reader(csvfile)
+                headers = next(reader, None)
+            
             if headers is None:
                 print("CSV文件为空。")
                 exit(1)
             
-            # 查找列索引，支持多种中英文列名格式
-            ip_col_idx = -1
-            port_col_idx = -1
+            # 定义可能的IP和端口列名（兼容两种格式）
+            ip_possible_names = [
+                'ip', 'ip地址', 'ip 地址', 'ip address', 'ip_address',
+                'ip地址', 'ip地址', 'ip address', 'ip_address'
+            ]
             
-            for i, header in enumerate(headers):
-                header_lower = header.lower().strip()
-                
-                # 匹配IP相关列名
-                if header_lower in ['ip', 'ip地址', 'ip 地址', 'ip address', 'ip_address']:
-                    ip_col_idx = i
-                # 匹配端口相关列名  
-                elif header_lower in ['port', '端口', '端口号']:
-                    port_col_idx = i
+            port_possible_names = [
+                'port', '端口', '端口号', '端口'
+            ]
+            
+            # 查找列索引
+            ip_col_idx = find_column_index(headers, ip_possible_names)
+            port_col_idx = find_column_index(headers, port_possible_names)
             
             # 如果没找到标准列名，尝试使用前两列作为默认
             if ip_col_idx == -1 and len(headers) > 0:
                 ip_col_idx = 0
-                print(f"未找到IP列，使用第一列 '{headers[0]}' 作为IP地址")
+                print(f"警告: 未找到IP列，使用第一列 '{headers[0]}' 作为IP地址")
+            
             if port_col_idx == -1 and len(headers) > 1:
                 port_col_idx = 1
-                print(f"未找到端口列，使用第二列 '{headers[1]}' 作为端口")
+                print(f"警告: 未找到端口列，使用第二列 '{headers[1]}' 作为端口")
             
             if ip_col_idx == -1 or port_col_idx == -1:
-                print("CSV中未找到 'ip' 和 'port' 列（忽略大小写）。")
+                print(f"错误: CSV中未找到 'ip' 和 'port' 列。")
+                print(f"表头: {headers}")
                 exit(1)
+            
+            print(f"检测到列: IP列='{headers[ip_col_idx]}' (索引:{ip_col_idx}), 端口列='{headers[port_col_idx]}' (索引:{port_col_idx})")
             
             # 读取数据行并写入 {base_name}.txt
             valid_count = 0
             with open(PROXY_FILE, 'w', encoding='utf-8') as f:
-                for row in reader:
-                    if len(row) > max(ip_col_idx, port_col_idx):
-                        ip = row[ip_col_idx].strip()
-                        port = row[port_col_idx].strip()
-                        
-                        # 直接写入，不做验证
-                        if ip and port:
+                for row_idx, row in enumerate(reader, start=2):  # 行号从2开始（表头后第一行）
+                    if len(row) <= max(ip_col_idx, port_col_idx):
+                        print(f"警告: 第{row_idx}行列数不足，跳过")
+                        continue
+                    
+                    ip = row[ip_col_idx].strip()
+                    port = row[port_col_idx].strip()
+                    
+                    # 清理IP地址（移除可能的协议前缀）
+                    if ip.startswith('http://'):
+                        ip = ip[7:]
+                    elif ip.startswith('https://'):
+                        ip = ip[8:]
+                    
+                    # 如果IP地址包含端口（如host列），提取IP部分
+                    if ':' in ip:
+                        # 检查是否是IP:端口格式
+                        parts = ip.split(':')
+                        if len(parts) == 2 and parts[1].isdigit():
+                            # 如果是IP:端口格式，且端口是数字，使用这个IP
+                            ip = parts[0]
+                            # 如果端口列为空，使用这里的端口
+                            if not port:
+                                port = parts[1]
+                    
+                    # 验证IP和端口
+                    if ip and port:
+                        # 简单验证IP格式
+                        if '.' in ip and ip.count('.') == 3:
                             f.write(f"{ip} {port}\n")
                             valid_count += 1
+                        else:
+                            print(f"警告: 第{row_idx}行IP地址格式不正确: {ip}")
+                    else:
+                        print(f"警告: 第{row_idx}行IP或端口为空: IP='{ip}', Port='{port}'")
             
             if valid_count == 0:
-                print("CSV中无IP和端口数据。")
+                print("错误: CSV中无有效的IP和端口数据。")
                 exit(1)
             
             print(f"已将 {valid_count} 个IPs和ports提取到 {PROXY_FILE}")
@@ -168,53 +215,63 @@ try:
         valid_count = 0
         with open(input_filename, 'r', encoding='utf-8') as infile, \
              open(PROXY_FILE, 'w', encoding='utf-8') as outfile:
-            for line in infile:
+            for line_num, line in enumerate(infile, start=1):
                 line = line.strip()
-                if not line:
+                if not line or line.startswith('#'):
                     continue
                 
-                # 处理 "ip port" 或 "ip:port" 格式
+                ip = ''
+                port = ''
+                
+                # 处理多种格式
                 if ' ' in line:
                     parts = line.split()
                     if len(parts) >= 2:
                         ip, port = parts[0], parts[1]
-                    else:
-                        continue
                 elif ':' in line:
                     parts = line.split(':')
                     if len(parts) >= 2:
                         ip, port = parts[0], parts[1]
-                    else:
-                        continue
-                else:
-                    continue
                 
-                # 直接写入，不做验证
+                # 清理IP地址
+                if ip.startswith('http://'):
+                    ip = ip[7:]
+                elif ip.startswith('https://'):
+                    ip = ip[8:]
+                
+                # 验证并写入
                 if ip and port:
-                    outfile.write(f"{ip} {port}\n")
-                    valid_count += 1
+                    if '.' in ip and ip.count('.') == 3:
+                        outfile.write(f"{ip} {port}\n")
+                        valid_count += 1
+                    else:
+                        print(f"警告: 第{line_num}行IP地址格式不正确: {ip}")
+                else:
+                    print(f"警告: 第{line_num}行无法解析IP和端口: {line}")
         
         if valid_count == 0:
-            print("TXT文件中无IP和端口数据。")
+            print("错误: TXT文件中无有效的IP和端口数据。")
             exit(1)
         
         print(f"已将 {valid_count} 个IPs和ports从 {input_filename} 提取到 {PROXY_FILE}")
     else:
-        print(f"不支持的文件格式: {file_extension}，请使用.csv或.txt文件")
+        print(f"错误: 不支持的文件格式: {file_extension}，请使用.csv或.txt文件")
         exit(1)
         
 except FileNotFoundError:
-    print(f"文件 {input_filename} 不存在。")
+    print(f"错误: 文件 {input_filename} 不存在。")
     exit(1)
 except csv.Error as e:
-    print(f"读取CSV文件时发生错误: {str(e)}")
+    print(f"错误: 读取CSV文件时发生错误: {str(e)}")
     exit(1)
 except Exception as e:
-    print(f"提取代理时发生异常: {str(e)}")
+    print(f"错误: 提取代理时发生异常: {str(e)}")
+    import traceback
+    traceback.print_exc()
     exit(1)
 
 # 步骤2: 执行 ./iptest 并处理生成的 CSV
-print("正在执行 ./iptest 命令...")
+print("\n正在执行 ./iptest 命令...")
 try:
     # 构建iptest命令
     iptest_command = ['./iptest', '-file', PROXY_FILE, '-outfile', IPTEST_CSV_FILE, '-tls=true']
@@ -237,7 +294,7 @@ try:
     returncode = process.poll()
     
     if returncode != 0:
-        print(f"执行 ./iptest 失败，返回码: {returncode}")
+        print(f"警告: 执行 ./iptest 失败，返回码: {returncode}")
     else:
         print("./iptest 执行成功")
         
@@ -249,13 +306,41 @@ try:
             seen_proxies = set()  # 用于去重的集合
             valid_count = 0
             with open(IPTEST_CSV_FILE, 'r', newline='', encoding='utf-8') as csvfile:
-                reader = csv.reader(csvfile)
-                headers = next(reader, None)  # 读取表头行
+                try:
+                    reader = csv.reader(csvfile)
+                    headers = next(reader, None)  # 读取表头行
+                except UnicodeDecodeError:
+                    csvfile.seek(0)
+                    reader = csv.reader(csvfile)
+                    headers = next(reader, None)
                 
-                if headers and len(headers) >= 9:  # 确保有足够的列
-                    # 查找IP、端口列的位置
-                    ip_col_idx = 0
-                    port_col_idx = 1
+                if headers:
+                    # 定义可能的IP和端口列名（针对iptest输出）
+                    ip_possible_names = [
+                        'ip地址', 'ip address', 'ip', 'ip地址'
+                    ]
+                    
+                    port_possible_names = [
+                        '端口', 'port', '端口号'
+                    ]
+                    
+                    # 查找列索引
+                    ip_col_idx = find_column_index(headers, ip_possible_names)
+                    port_col_idx = find_column_index(headers, port_possible_names)
+                    
+                    # 如果没找到，使用默认的前两列
+                    if ip_col_idx == -1 and len(headers) > 0:
+                        ip_col_idx = 0
+                    
+                    if port_col_idx == -1 and len(headers) > 1:
+                        port_col_idx = 1
+                    
+                    if ip_col_idx == -1 or port_col_idx == -1:
+                        print(f"错误: {IPTEST_CSV_FILE} 中未找到IP和端口列。")
+                        print(f"表头: {headers}")
+                        exit(1)
+                    
+                    print(f"检测到列: IP列='{headers[ip_col_idx]}' (索引:{ip_col_idx}), 端口列='{headers[port_col_idx]}' (索引:{port_col_idx})")
                     
                     # 写入 iptest_{base_name}.txt，去重
                     with open(IPTEST_TXT_FILE, 'w', encoding='utf-8') as f:
@@ -265,6 +350,12 @@ try:
                                 port = row[port_col_idx].strip()
                                 
                                 if ip and port:
+                                    # 清理IP地址
+                                    if ip.startswith('http://'):
+                                        ip = ip[7:]
+                                    elif ip.startswith('https://'):
+                                        ip = ip[8:]
+                                    
                                     proxy_key = f"{ip}:{port}"  # 创建唯一标识符
                                     if proxy_key not in seen_proxies:  # 检查是否重复
                                         seen_proxies.add(proxy_key)
@@ -273,16 +364,18 @@ try:
                     
                     print(f"从 {IPTEST_CSV_FILE} 提取了 {valid_count} 个代理到 {IPTEST_TXT_FILE}")
                 else:
-                    print(f"{IPTEST_CSV_FILE} 文件格式不正确")
+                    print(f"错误: {IPTEST_CSV_FILE} 文件格式不正确或为空")
         else:
-            print(f"未找到 {IPTEST_CSV_FILE} 文件")
+            print(f"警告: 未找到 {IPTEST_CSV_FILE} 文件")
             
 except subprocess.TimeoutExpired:
-    print("./iptest 执行超时")
+    print("错误: ./iptest 执行超时")
 except FileNotFoundError:
-    print("未找到 ./iptest 命令")
+    print("错误: 未找到 ./iptest 命令")
 except Exception as e:
-    print(f"执行 ./iptest 时发生异常: {str(e)}")
+    print(f"错误: 执行 ./iptest 时发生异常: {str(e)}")
+    import traceback
+    traceback.print_exc()
 
 # 显示最终结果
 print("\n" + "="*80)
