@@ -11,7 +11,7 @@ server=="cloudflare" && asn=="4766" && is_domain=false && port=="50001" && after
 查询as4760香港的反代ip
 server=="cloudflare" && asn=="4760" && is_domain=false && "CF-RAY:" && "-HKG" && port!="80" && port!="443"
 
-server=="cloudflare" && asn=="4766" && is_domain=false && "CF-RAY:" && "-ICN" && title=="403 Forbidden" && country="KR" && after="2025-04-30"
+server=="cloudflare" && is_domain=false && "CF-RAY:" && "-SJC" && country="US" && asn!="13335" && asn!="209242" && port!="80" && port!="443" && port!="8080" && port!="8880" && port!="2052" && port!="2082" && port!="2086" && port!="2095" && port!="2053" && port!="2083" && port!="2096" && port!="2087" && port!="8443"
 
 - 国内反代IP：server=="cloudflare" && port=="80" && header="Forbidden" && country=="CN"
 - 剔除CF：asn!="13335" && asn!="209242"
