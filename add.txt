@@ -18,8 +18,12 @@
 173.249.198.165:50000#US-06
 47.254.90.225:20142#US-7
 saas.sin.fan#MIYU维护(三网优选)
-cf.090227.xyz#三网自适应
+cf.090227.xyz#CM(三网优选)
 store.ubi.com#Ubisoft官方(三网优选)
 mfa.gov.ua#乌克兰外交部(三网优选)
-www.shopify.com#Shopify官方(三网优选)
+www.shopify.com#Shopify(三网优选)
 staticdelivery.nexusmods.com#NexusMods(三网优选)
+cloudflare.seeck.cn#Seeck(三网优选)
+ctcc.cloudflare.seeck.cn#Seeck(电信优选)
+cmcc.cloudflare.seeck.cn#Seeck(移动优选)
+cucc.cloudflare.seeck.cn#Seeck(联通优选)
